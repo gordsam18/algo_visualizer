@@ -55,10 +55,6 @@ class AlgoVisualizer(arcade.Window):
                 #bubble_sort(self.array)
                 self.sort_step()
                 self.delay_counter = 0
-
-    def button(self):
-        arcade.gui.UIFlatButton(0,0, 100, 50, "Start")
-
         
         
     def sort_step(self):
@@ -70,9 +66,6 @@ class AlgoVisualizer(arcade.Window):
             merge_sort(self.array)
         elif self.sorting_algorithm == "selection":
             selection_sort(self.array, self.swap_sound, self.volume)
-        
-        
-
             
 
     def on_key_press(self, key, modififers):

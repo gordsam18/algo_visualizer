@@ -23,7 +23,6 @@ def bubble_sort(array, sound, volume):
                 
                 array[i] = array[i + 1]
                 array[i + 1] = temp
-                #array_colors[i], array_colors[i + 1] = arcade.color.RED, arcade.color.RED
 
                 
                 if i > 0:
