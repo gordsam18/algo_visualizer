@@ -1,3 +1,4 @@
+import arcade
 """
 Selection Sort:
 
@@ -10,7 +11,7 @@ How it works:
 3. Go through the unsorted part of the array again as many times as there are values.
 """
 
-def selection_sort(array):
+def selection_sort(array, sound, volume):
     # take the length of the array 
     n = len(array)
 
@@ -26,6 +27,7 @@ def selection_sort(array):
             if array[j] > current_value:
                 insert_index = j
         array.insert(insert_index, current_value)
+        arcade.play_sound(sound, volume)
     
     return array
 
