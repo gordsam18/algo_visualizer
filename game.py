@@ -34,8 +34,6 @@ class AlgoVisualizer(arcade.Window):
     def on_draw(self):
         arcade.start_render()
 
-        self.button() 
-
         bar_width = SCREEN_WIDTH / len(self.array)
         for i, value in enumerate(self.array):
             color = self.array_colors[i]
